@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my first project</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="logo"></a>
+    <h2 class="Rainbow">Portfolio</h2>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="#navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header-container bg-dark">
+    <div class="container flex">
+      <div class="name-container">
+        <h1>Hi I'm <br> Surya Teja</h1>
+        <h4>student, developer enthusiat</h4>
+      </div>
+      <!-- <div class="img-container">
+        <img src="img/profile.png" alt="">
+      </div> -->
+    </div>
+  </div>
+
+  <div class="about-container bg-dark flex" id="about-me">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="education-info flex">
+        <p>Hi My name is <span style="color:rgb(255, 113, 66);font-weight: bold;">Surya Teja</span>. Currently I'm
+          pursuing my Bacholer's degree at <span style="color: rgb(255, 148, 61);font-weight: bold;">University College
+            of Engineering</span>, Osmania University. I am always enthusiast on knowing new things and Technologies.
+          Currently I'm working on improving my Web Technologies skills.</p>
+        <div class="about-info">
+          <h4><span>Age : </span> 20</h4>
+          <h4><span>Gender : </span>male</h4>
+          <h4><span>Phone : </span> 999999999</h4>
+          <h4><span>Mail-id : </span> something@gmail.com</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-info-section bg-dark">
+    <div class="container">
+      <div class="edu-info flex">
+        <h3 class="tab-link active-link" onclick="opentab('skill')">Skills</h3>
+        <h3 class="tab-link" onclick="opentab('projects')">Projects</h3>
+        <h3 class="tab-link" onclick="opentab('education')">Education</h3>
+      </div>
+      <div class="info-content active-info" id="skill">
+        <ul>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="info-content" id="projects">
+        <dl>
+          <dt>Hotel Booking Web Application</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias numquam deleniti similique
+            commodi inventore facilis voluptatum dicta dolorum minima!</dd>
+          <dt>Tic Tac Toe</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, recusandae.</dd>
+          <dt>Portfolio Website</dt>
+          <dd>Designed a portfolio website to display my knowledge and different technologies I actually know.
+            <br>Technologies used : HTML, CSS, JavaScript
+          </dd>
+        </dl>
+      </div>
+      <div class="info-content" id="education">
+        <dl>
+          <dt>Bacholer of Engineering</dt>
+          <dd>University College of Engineering, Osmania University, Hyderabad-500007, India</dd>
+          <dt>Intermediate</dt>
+          <dd>Sri Chaitanya Junior Kalasala, Gudimalkapur-500006, Hyderabad, India</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <footer class="contact-me-container">
+    <div class="container flex contact-container">
+      <h2>Contact Me</h2>
+      <p>For further more details, click on the icons below.</p>
+      <div class="contact-icons flex">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- <div class="empty-container" style="height: 100vh;"></div> -->
+
+
+
+  <script>
+    var tablink = document.getElementsByClassName("tab-link")
+    var tabcontent = document.getElementsByClassName("info-content")
+
+    function opentab(tabname) {
+      for (link of tablink) {
+        link.classList.remove("active-link");
+      }
+      for (content of tabcontent) {
+        content.classList.remove("active-info");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-info");
+    }
+
+
+  </script>
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
