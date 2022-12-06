@@ -9,19 +9,17 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-</head> 
+</head>
 
 <body class="bg-dark">
   <!-- nav bar -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="logo"></a>
     <h2 class="Rainbow">Portfolio</h2>
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#nav2" onclick="toggleron()">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="#navbarSupportedContent">
+  </button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav2">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
@@ -30,7 +28,7 @@
           <a class="nav-link" href="#about-me">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#projects" onclick="opentab('projects')">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
@@ -115,7 +113,8 @@
       <div class="contact-icons flex">
         <a href="https://twitter.com/SankuriTeja" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://github.com/Surya-Teja-Sankuri" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/surya-teja-sankuri-146319244/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/surya-teja-sankuri-146319244/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
         <a href="https://hashnode.com/@Surya13" target="_blank"><i class="fa-brands fa-hashnode"></i></a>
       </div>
     </div>
@@ -124,6 +123,10 @@
   <!-- <div class="empty-container" style="height: 100vh;"></div> -->
 
   <script src="js/all.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
